@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Josefin Sans";
+  font-size: 16px;
+}
+body {
+  height: 100vh;
+  background-image: linear-gradient(
+    135deg,
+    hsl(0, 0%, 100%),
+    hsl(0, 100%, 98%)
+  );
+}
+
+.logo-bar {
+  padding: 2rem;
+}
+
+.banner-img {
+  margin-bottom: 4rem;
+  width: 100%;
+}
+
+.banner-img-desktop {
+  display: none;
+}
+
+.banner {
+  text-align: center;
+}
+
+.main-heading {
+  font-size: 3rem;
+  font-weight: lighter;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  color: hsl(0, 36%, 70%);
+  margin-bottom: 2rem;
+}
+
+.span-text {
+  font-weight: 400;
+  letter-spacing: 9px;
+  color: hsl(0, 6%, 24%);
+}
+
+.desc {
+  font-size: 1.1rem;
+  color: hsl(0, 36%, 70%);
+  padding: 0 1.5rem;
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.email-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.email {
+  background-color: transparent;
+  width: 80%;
+  border: 0.5px solid hsl(0, 36%, 70%);
+  border-radius: 25px;
+  padding: 1rem;
+  color: hsl(0, 36%, 70%);
+  font-size: 1rem;
+}
+
+::placeholder {
+  color: hsl(0, 36%, 70%);
+  opacity: 0.5;
+}
+
+.error {
+  margin-left: -20%;
+  margin-right: 10%;
+}
+
+.error-display {
+  display: none;
+}
+
+.custom-btn {
+  width: 17%;
+  height: 52px;
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  margin-left: -8%;
+  border: 0;
+  border-radius: 25px;
+  text-align: center;
+}
+
+@media all and (min-width: 1440px) {
+  html {
+    font-size: 20px;
+  }
+  body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .banner-img-desktop {
+    display: block;
+    width: 40%;
+  }
+
+  .banner-img {
+    display: none;
+  }
+
+  .main-content {
+    height: 755.92px;
+    padding: 0 4rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 55%;
+  }
+
+  .logo-bar {
+    margin-bottom: 5rem;
+    padding-left: 4rem;
+  }
+
+  .banner {
+    text-align: left;
+  }
+
+  .main-heading {
+    padding-left: 4rem;
+  }
+
+  .desc {
+    text-align: left;
+    padding-left: 4rem;
+  }
+
+  .email-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 4rem;
+    max-width: 80%;
+  }
+
+  .email {
+    width: 100%;
+  }
+
+  .custom-btn {
+    height: 65px;
+    border-radius: 30px;
+  }
+
+  .error {
+    margin-left: -20%;
+    margin-right: 10%;
+  }
+
+  .error-display {
+    display: none;
+  }
+}
